@@ -221,4 +221,12 @@ onboarding = [
 
     'Happy mathing!'
 ].join('\n');
+
+// Writing new onboarding text intended for Auburn math folks.
+onboarding = [
+    '# Online $\LaTeX$ markup for replying to emails!\n'
+].join('\n');
+
+
+
 random = [onboarding];

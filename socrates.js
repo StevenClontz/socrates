@@ -6,7 +6,7 @@ marked.setOptions({
 });
 
 window.Socrates = {
-    firebaseUrl : 'https://socrates.firebaseIO.com/'
+    firebaseUrl : 'https://socrates-au.firebaseio.com/'
 };
 
 

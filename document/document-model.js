@@ -45,7 +45,7 @@ Socrates.DocumentModel = Backbone.Model.extend({
         };
     },
 
-    urlRoot : Socrates.firebaseUrl + 'documents/',
+    urlRoot : Socrates.firebaseUrl + 'socrates-docs/',
 
     initialize : function (attributes, options) {
         _.bindAll(this);

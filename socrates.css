@@ -199,7 +199,7 @@ body {
   font-style: normal; }
 
 .read {
-  font-family: "Times New Roman", serif;
+  font-family: "Georgia", serif;
   border-left: 1px solid #f1f1e7;
   box-shadow: 0 -1px 10px #f1f1e7; }
 
@@ -322,7 +322,7 @@ body {
   flex: 1; }
 
 .attribution {
-  font-family: "Times New Roman", serif;
+  font-family: "Georgia", serif;
   padding: 1rem;
   text-align: center;
   color: rgba(53, 51, 46, 0.4); }

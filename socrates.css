@@ -1,41 +1,386 @@
-/*
-Syntax error: Invalid mixin "======".
-        on line 4 of socrates.sass
+html {
+  font-size: 16px;
+  line-height: 1.45;
+  color: #35332e;
+  overflow-y: scroll;
+  overflow-x: hidden; }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 17px; } }
+  @media (min-width: 1300px) {
+    html {
+      font-size: 18px; } }
+  @media (min-width: 1600px) {
+    html {
+      font-size: 20px; } }
+  @media (min-width: 1800px) {
+    html {
+      font-size: 22px; } }
 
-1: <<<<<<< HEAD
-2: //@import symbolset/ss-standard
-3: 
-4: =======
-5: >>>>>>> master
-6: @mixin flexbox()
-7:     display: -webkit-box
-8:     display: -moz-box
-9:     display: -ms-box
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  color: #35332e;
+  padding: 0.5rem 0.6rem 0.45rem;
+  cursor: pointer;
+  opacity: 0.2; }
+  button:hover, button:active, button.pressed {
+    opacity: 1; }
 
-Backtrace:
-socrates.sass:4
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:833:in `parse_mixin_definition'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:570:in `parse_line'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:471:in `build_tree'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:490:in `block in append_children'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:489:in `each'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:489:in `append_children'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:345:in `_to_tree'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/engine.rb:262:in `render'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:299:in `block in watch'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/adapter.rb:162:in `call'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/adapter.rb:162:in `poll_changed_dirs'
-/Users/stevenclontz/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.5/vendor/listen/lib/listen/adapters/darwin.rb:28:in `block in start'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid mixin \"======\".\A         on line 4 of socrates.sass\A \A 1: <<<<<<< HEAD\A 2: //@import symbolset/ss-standard\A 3: \A 4: =======\A 5: >>>>>>> master\A 6: @mixin flexbox()\A 7:     display: -webkit-box\A 8:     display: -moz-box\A 9:     display: -ms-box"; }
+article > :first-child {
+  margin-top: 0; }
+article > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+article h1 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  text-align: center; }
+  article h1::after {
+    content: "";
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+    border-bottom: 1px solid #eeeeee;
+    top: 100%;
+    position: absolute;
+    margin-top: 1rem; }
+article h2 {
+  font-size: 1.25rem;
+  margin-top: 2rem; }
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: -0.5rem; }
+article p {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; }
+article blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic; }
+article a {
+  position: relative;
+  color: #49b27d; }
+  article a:hover, article a:focus {
+    color: #3f996b; }
+  article a:active {
+    top: 1px; }
+article ul,
+article ol {
+  margin-left: 2em;
+  font-size: 0.9em; }
+  article ul > li,
+  article ol > li {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; }
+article ul {
+  list-style-type: disc; }
+article pre,
+article code {
+  font-family: "inconsolata", monospace;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+article pre {
+  font-size: 0.8em; }
+article code {
+  font-size: 0.95em; }
+article hr {
+  background: transparent;
+  border: none;
+  width: 100px;
+  margin: 1.5em auto;
+  border-bottom: 1px solid #eeeeee; }
+article img {
+  max-width: 100%; }
+
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  border: none;
+  background: transparent;
+  resize: none; }
+  textarea:focus {
+    outline: none; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  min-height: 100%;
+  min-width: 100%; }
+
+.write,
+.read {
+  position: relative;
+  overflow: hidden; }
+
+.write {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  -webkit-flex: 0;
+  -moz-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 33rem; }
+
+.write-form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.read {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.write-textarea-wrap,
+.document-article {
+  padding: 3rem;
+  max-width: 32rem;
+  margin: 0 auto; }
+
+.write-buttons,
+.read-buttons {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-style: normal; }
+
+.read {
+  font-family: "kepler-std", serif;
+  border-left: 1px solid #f1f1e7;
+  box-shadow: 0 -1px 10px #f1f1e7; }
+
+.read-only-button {
+  float: left; }
+
+.write {
+  background: #fcfcfa; }
+
+.write,
+.document-textarea {
+  font-family: "inconsolata", monospace;
+  font-size: 12px;
+  line-height: 1.2; }
+  @media (min-width: 1200px) {
+    .write,
+    .document-textarea {
+      font-size: 14px; } }
+
+.write-textarea-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.document-textarea {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .document-textarea::-webkit-scrollbar {
+    width: 7px; }
+  .document-textarea::-webkit-scrollbar-track {
+    margin: 3rem; }
+  .document-textarea::-webkit-scrollbar-thumb {
+    border-radius: 14px;
+    background: #edebe2; }
+
+.document-menu {
+  list-style: none;
+  position: relative;
+  background-color: #f7f6f2;
+  border-top: 1px #edebe2 solid;
+  border-bottom: 1px #edebe2 solid;
+  box-shadow: inset 2px 0 6px #ebe9df;
+  display: none;
+  max-height: 500px;
+  overflow-y: auto; }
+  .document-menu::-webkit-scrollbar {
+    width: 0; }
+
+.document-menu-item {
+  overflow: hidden;
+  cursor: pointer; }
+  .document-menu-item:hover, .document-menu-item:focus {
+    background: rgba(53, 51, 46, 0.01);
+    outline: none;
+    color: #49b27d; }
+  .document-menu-item:active {
+    color: #3f996b; }
+
+.document-menu-item-wrap {
+  position: relative;
+  max-width: 26rem;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.document-menu-item-title {
+  padding: 0.5rem 0 0.45rem;
+  position: absolute;
+  left: 0;
+  right: 2em;
+  top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.document-menu-item-delete-button {
+  float: right;
+  opacity: 0.15; }
+
+.menu-button,
+.add-button {
+  float: left; }
+
+.write-only-button {
+  float: right; }
+
+.add-button {
+  padding-left: 0.33333rem; }
+
+.menu-button {
+  padding-right: 0.33333rem; }
+
+.write-only .read,
+.read-only .write {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  -webkit-flex: 0;
+  -moz-flex: 0;
+  -ms-flex: 0;
+  flex: 0; }
+
+.write-only .read {
+  width: 37rem;
+  margin-right: -30rem; }
+
+.read-only .write {
+  margin-left: -26rem; }
+
+.write-only .write,
+.read-only .read {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.attribution {
+  font-family: "kepler-std", serif;
+  padding: 1rem;
+  text-align: center;
+  color: rgba(53, 51, 46, 0.4); }
+  .attribution .segmentio-link,
+  .attribution .firebase-link {
+    vertical-align: middle;
+    display: inline-block;
+    text-indent: -9999px;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    margin-left: 0.3em;
+    opacity: 0.4; }
+    .attribution .segmentio-link:hover,
+    .attribution .firebase-link:hover {
+      opacity: 1; }
+  .attribution .segmentio-link {
+    background-image: url("images/segmentio.png");
+    width: 110px;
+    height: 20px; }
+  .attribution .firebase-link {
+    background-image: url("images/firebase.png");
+    width: 98px;
+    height: 19px; }
+  .attribution a, .attribution a:visited, .attribution a:hover, .attribution a:active {
+    color: rgba(53, 51, 46, 0.4); }
+
+pre .comment {
+  color: #aba79e; }
+pre .constant,
+pre .storage,
+pre .tag,
+pre .keyword:not(.operator),
+pre .selector,
+pre .string:not(.value),
+pre .regexp,
+pre .function {
+  color: #4b8b8d; }
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.eot?v=3.0.2");
+  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.eot?#iefix&v=3.0.2") format("embedded-opentype");
+  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.woff?v=3.0.2") format("woff");
+  src: url("http://netdna.bootstrapcdn.com/font-awesome/3.0.2/font/fontawesome-webfont.ttf?v=3.0.2") format("truetype"); }
+
+i.icon {
+  font-style: normal;
+  font-family: "FontAwesome"; }
+
+i.icon-list-alt:before {
+  content: "\f022"; }
+
+i.icon-plus:before {
+  content: "\f067"; }
+
+i.icon-pencil:before {
+  content: "\f040"; }
+
+i.icon-eye-open:before {
+  content: "\f06e"; }

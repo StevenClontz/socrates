@@ -27,20 +27,20 @@
             <ul class="document-menu"></ul>
             <form class="write-form">
                 <div class="write-buttons">
-                    <button class="menu-button ss-rows"></button>
-                    <button class="add-button ss-plus"></button>
-                    <button class="write-only-button ss-write"></button>
+                    <button class="menu-button ss-rows">Menu</button>
+                    <button class="add-button ss-plus">+</button>
+                    <button class="write-only-button ss-write">&rarr;</button>
                 </div>
                 <div class="write-textarea-wrap">
                     <textarea class="document-textarea"></textarea>
                 </div>
             </form>
-            <aside class="attribution">Brought to you by <a class="segmentio-link" href="https://segment.io">Segment.io</a>&ensp;&mdash;&ensp;Powered by <a class="firebase-link" href="https://firebase.com">Firebase</a></aside>
+            <aside class="attribution">Forked from <a href="http://socrates.io">Socrates.io</a> | View on <a href="https://github.com/StevenClontz/socrates">GitHub</a></aside>
         </section>
 
         <section class="read">
             <div class="read-buttons">
-                <button class="read-only-button ss-view"></button>
+                <button class="read-only-button ss-view">&larr;</button>
             </div>
             <article class="document-article"></article>
         </section>
@@ -49,7 +49,7 @@
             <li data-id="<%= document.id %>" class="document-menu-item">
                 <div class="document-menu-item-wrap">
                     <span class="document-menu-item-title"><%= document.get('title') %></span>
-                    <button class="document-menu-item-delete-button ss-trash"></button>
+                    <button class="document-menu-item-delete-button ss-trash">T</button>
                 </div>
             </li>
         </script>

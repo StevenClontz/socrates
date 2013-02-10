@@ -224,7 +224,23 @@ onboarding = [
 
 // Writing new onboarding text intended for Auburn math folks.
 onboarding = [
-    '# Online $\LaTeX$ markup for replying to emails!\n'
+"# Share math markup with others using $\\LaTeX$!\n",
+
+"It's frustrating replying to emails with math questions, when you have to reply in plaintext...\n",
+
+"> To take the length of a vector, you need to take the square root of the sum of the squared components. The equation for the vector <v1,v2,v3> is sqrt(v1^2+v2^2+v3^2).\n",
+
+"Heaven forbid your explanation involves an integral!",
+
+"We can write beautiful explanations in $\\LaTeX$, but how do we share them with others? Thanks to the creators of [Socrates.io](http://socrates.io), I've adapted their web app for use by Auburn University math instructors (or anyone else). Simply type your text and $\\LaTeX$ in the left box, and it automatically displays on the right!\n",
+
+"    $$ \\left|\\vec{v}\\right| = ",
+"    \\left|\\left<v_1,v_2,v_3\\right>\\right| =",
+"    \\sqrt{v_1^2+v_2^2+v_3^2}$$\n",
+
+"$$ \\left|\\vec{v}\\right| = ",
+"\\left|\\left<v_1,v_2,v_3\\right>\\right| =",
+"\\sqrt{v_1^2+v_2^2+v_3^2}$$\n"
 ].join('\n');
 
 

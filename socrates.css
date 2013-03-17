@@ -593,7 +593,8 @@ article p {
 article blockquote {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  font-style: italic; }
+  margin-left: 1.5rem;
+  font-size: 0.9rem; }
 article a {
   position: relative;
   color: #49b27d; }
@@ -614,6 +615,7 @@ article ul {
 article pre,
 article code {
   font-family: "Cutive Mono", monospace;
+  font-size: 90%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem; }
 article pre {
@@ -734,6 +736,7 @@ body {
 .write,
 .document-textarea {
   font-family: "Cutive Mono", monospace;
+  font-size: 90%;
   font-size: 12px;
   line-height: 1.2; }
   @media (min-width: 1200px) {
